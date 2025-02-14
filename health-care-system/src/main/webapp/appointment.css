@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.appointments-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.appointments-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Table Styles */
+.appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.appointments-table th, .appointments-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Table Header */
+.appointments-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Table Row on Hover */
+.appointments-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* No Appointments */
+.no-appointments {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+
+/* Delete Icon */
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.delete-btn:focus {
+    outline: none;
+}
+.prescription-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.prescription-btn:hover {
+    background-color: #218838;
+}
+
+.prescription-btn:focus {
+    outline: none;
+}
+/* Prescription Icon */
+.prescription-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.prescription-btn:hover {
+    background-color: #218838;
+}
+
+.prescription-btn:focus {
+    outline: none;
+}
+
+/* Button to go to Dashboard */
+.dashboard-btn {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dashboard-btn:hover {
+    background-color: #0056b3;
+}
+
+#prescription-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    display: none; /* Hide modal initially */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure modal is on top */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Set a relative width */
+    max-width: 60%; /* Prevent it from getting too wide */
+    max-height: 80vh; /* Prevent overflow */
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    background-color: #dc3545;
+}
+
+button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+/* Modal Styles */
+#prescriptionModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    display: none; /* Hide modal initially */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure modal is on top */
+    overflow-y: auto; /* Allow scrolling for content */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #e74c3c;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Prescription Table */
+#prescriptionDetails table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#prescriptionDetails th, #prescriptionDetails td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Header of the Prescription Details */
+#prescriptionDetails h3 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Table Header */
+#prescriptionDetails th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+/* Table Row on Hover */
+#prescriptionDetails tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Close Button Styles */
+.close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-btn:hover {
+    color: #e74c3c;
+}

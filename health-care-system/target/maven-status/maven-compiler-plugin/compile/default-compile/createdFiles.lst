@@ -1,0 +1,16 @@
+com\healthcare\servlet\ConsultationServlet.class
+com\healthcare\model\User.class
+com\healthcare\servlet\UserServlet.class
+com\healthcare\model\Prescription.class
+com\healthcare\servlet\DoctorDashboardServlet.class
+com\healthcare\servlet\RejectAppointmentServlet.class
+com\healthcare\model\Consultation.class
+com\healthcare\servlet\ApproveAppointmentServlet.class
+com\healthcare\servlet\FetchPrescriptionServlet.class
+com\healthcare\servlet\AddPrescriptionServlet.class
+com\healthcare\servlet\DeleteAppointmentServlet.class
+com\healthcare\servlet\DeletePrescriptionServlet.class
+com\healthcare\db\DatabaseConnection.class
+com\healthcare\servlet\FetchDoctorServlet.class
+com\healthcare\model\Appointment.class
+com\healthcare\model\Doctor.class
